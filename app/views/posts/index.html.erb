@@ -1,0 +1,6 @@
+<h1>Photogram</h1>
+
+<% @posts.each do |post| %>
+    <%= image_tag post.image.representation(resize: "640x") %>
+    <%= post.caption %>
+<% end %>
