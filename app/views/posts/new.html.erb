@@ -1,5 +1,3 @@
-<%= form_with model: @post do |form| %>
-    <%= form.file_field :image %>
-    <%= form.text_field :caption %>
-    <%= form.submit %>
-<% end %>
+<div class="form-wrapper">
+    <%= render "form", post: @post %>
+</div>

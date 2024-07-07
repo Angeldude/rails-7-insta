@@ -1,0 +1,6 @@
+<div class="form-wrapper">
+    <div class="text-center">
+        <%= image_tag @post.image.representation(resize: "640x"), class: 'container img-responsive' %>
+    </div>
+    <%= render "form", post: @post %>
+</div>
